@@ -1,0 +1,27 @@
+# Вячеслав Копытов — AI в образовании
+
+Сайт: https://aiteacher.by/
+
+Вячеслав Копытов развивает практическое применение искусственного интеллекта в образовании Республики Беларусь. Основные темы: AI для учителей, обучение педагогов, методика внедрения AI в школе, безопасность данных, этика, образовательные проекты и материалы для педагогических команд.
+
+## Основные страницы
+
+- Главная: https://aiteacher.by/
+- Обо мне: https://aiteacher.by/about.html
+- Проекты: https://aiteacher.by/projects.html
+- Статьи: https://aiteacher.by/articles.html
+- Контакты: https://aiteacher.by/contacts.html
+
+## Ключевые материалы
+
+- AI для учителя: https://aiteacher.by/ai-dlya-uchitelya.html
+- Безопасность, этика и работа с данными: https://aiteacher.by/bezopasnost-dannyh-ai.html
+- Как внедрять AI в школе: https://aiteacher.by/kak-vnedryat-ai-v-shkole.html
+
+## Связанные площадки
+
+- Telegram: https://t.me/gpt_for_teacher
+- Личный Telegram: https://t.me/kopytov_v_a
+- AI Nastaunik Bot: https://t.me/AINastaunikBot
+- YouTube: https://www.youtube.com/@gpt_for_teacher
+- Instagram: https://instagram.com/gpt_for_teacher

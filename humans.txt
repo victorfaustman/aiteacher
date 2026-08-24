@@ -1,0 +1,10 @@
+/* TEAM */
+Owner: Вячеслав Копытов
+Site: https://aiteacher.by/
+Contact: mail@aiteacher.by
+Telegram: https://t.me/kopytov_v_a
+
+/* SITE */
+Language: Russian
+Topic: Artificial intelligence in education, teachers, schools, Belarus
+Stack: Static HTML, CSS, JavaScript, GitHub Pages
