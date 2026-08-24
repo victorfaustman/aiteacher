@@ -121,6 +121,9 @@ nav a.active{
   position:relative;
   padding:38px 0 34px;
 }
+.hero-home{
+  padding:44px 0 34px;
+}
 .page-hero{
   padding:44px 0 28px;
 }
@@ -300,6 +303,9 @@ nav a.active{
     min-height:calc(100vh - 88px);
     display:flex;
     align-items:center;
+  }
+  .hero-home{
+    min-height:auto;
   }
   .hero-grid{grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr)}
 }
