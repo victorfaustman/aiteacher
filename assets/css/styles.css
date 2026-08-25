@@ -204,6 +204,53 @@ nav a.active{
 .minimal-button span{
   color:rgba(255,255,255,.58);
 }
+.minimal-social-icons{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+.social-icon-link{
+  display:grid;
+  place-items:center;
+  width:48px;
+  height:48px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;
+  color:#fff;
+  background:rgba(255,255,255,.055);
+  box-shadow:0 14px 32px rgba(0,0,0,.18);
+  transition:transform .18s ease, border-color .18s ease, background .18s ease;
+}
+.social-icon-link:hover{
+  transform:translateY(-2px);
+  border-color:rgba(255,255,255,.24);
+  background:rgba(255,255,255,.09);
+}
+.social-icon-link svg{
+  width:23px;
+  height:23px;
+  fill:currentColor;
+}
+.social-icon-telegram{
+  color:#8ed9ff;
+  background:linear-gradient(180deg, rgba(111,211,255,.18), rgba(255,255,255,.045));
+}
+.social-icon-youtube{
+  color:#ff8d8d;
+  background:linear-gradient(180deg, rgba(255,92,92,.18), rgba(255,255,255,.045));
+}
+.social-icon-instagram{
+  color:#ffbd7a;
+  background:
+    radial-gradient(circle at 30% 24%, rgba(255,214,107,.25), transparent 38%),
+    linear-gradient(135deg, rgba(167,133,255,.2), rgba(255,122,24,.12));
+}
+.social-icon-personal{
+  color:#ffe1a2;
+  background:linear-gradient(180deg, rgba(255,214,107,.16), rgba(255,255,255,.045));
+}
 .minimal-portrait{
   position:relative;
   overflow:hidden;
