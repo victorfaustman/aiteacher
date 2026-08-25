@@ -141,7 +141,14 @@ nav a.active{
   color:rgba(248,251,255,.7);
   font-size:14px;
 }
-.minimal-top a{
+.minimal-menu{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.minimal-menu a{
   padding:9px 13px;
   border:1px solid var(--line);
   border-radius:999px;
@@ -225,16 +232,25 @@ nav a.active{
   font-size:14px;
   line-height:1.45;
 }
-.minimal-links{
+.minimal-social{
   display:flex;
   justify-content:center;
+  align-items:center;
   gap:14px;
   flex-wrap:wrap;
   margin-top:18px;
   color:rgba(248,251,255,.62);
   font-size:14px;
 }
-.minimal-links a{
+.minimal-social span{
+  color:#ffe1a2;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.minimal-social a{
+  padding:8px 0;
   border-bottom:1px solid rgba(255,255,255,.2);
   color:rgba(248,251,255,.66);
 }
@@ -1052,6 +1068,9 @@ h1{
   .minimal-top{
     align-items:flex-start;
     flex-direction:column;
+  }
+  .minimal-menu{
+    justify-content:flex-start;
   }
   .minimal-card{
     grid-template-columns:1fr;

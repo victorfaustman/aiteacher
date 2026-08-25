@@ -9,6 +9,7 @@
 - Главная: https://aiteacher.by/
 - Обо мне: https://aiteacher.by/about.html
 - Проекты: https://aiteacher.by/projects.html
+- Клуб Наставник: https://aiteacher.by/club.html
 - Статьи: https://aiteacher.by/articles.html
 - Контакты: https://aiteacher.by/contacts.html
 
