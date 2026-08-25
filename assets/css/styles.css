@@ -301,6 +301,177 @@ nav a.active{
   border-bottom:1px solid rgba(255,255,255,.2);
   color:rgba(248,251,255,.66);
 }
+.minimal-name{
+  color:rgba(248,251,255,.82);
+  font-weight:800;
+}
+.simple-page{
+  width:min(1040px, calc(100% - 48px));
+  margin:0 auto;
+  padding:24px 0 44px;
+}
+.simple-hero,
+.simple-section{
+  border:1px solid var(--line);
+  border-radius:34px;
+  background:linear-gradient(180deg, rgba(10,24,43,.92), rgba(7,18,34,.84));
+  box-shadow:0 30px 90px rgba(0,0,0,.28);
+}
+.simple-hero{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 300px;
+  gap:28px;
+  align-items:center;
+  padding:34px;
+}
+.simple-hero h1{
+  max-width:14ch;
+  font-size:clamp(34px,5vw,62px);
+  line-height:1;
+}
+.simple-lead{
+  max-width:46rem;
+  margin:18px 0 0;
+  color:var(--muted);
+  font-size:clamp(17px,1.4vw,20px);
+  line-height:1.62;
+}
+.simple-photo{
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:28px;
+  background:#13243a;
+  min-height:340px;
+}
+.simple-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+}
+.simple-section{
+  margin-top:18px;
+  padding:28px;
+}
+.simple-section-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:18px;
+  flex-wrap:wrap;
+}
+.simple-section-head h2{
+  max-width:20ch;
+  margin-top:10px;
+  font-family:var(--font-display);
+  font-size:clamp(26px,3vw,40px);
+  line-height:1.08;
+}
+.simple-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.simple-grid.two{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.simple-card{
+  position:relative;
+  overflow:hidden;
+  min-height:100%;
+  padding:22px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:24px;
+  background:rgba(255,255,255,.055);
+  color:var(--text);
+  transition:transform .18s ease, border-color .18s ease, background .18s ease;
+}
+.simple-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(255,214,107,.24);
+  background:rgba(255,255,255,.075);
+}
+.simple-card h2,
+.simple-card h3{
+  margin:0 0 10px;
+  font-size:clamp(21px,2vw,28px);
+  line-height:1.12;
+}
+.simple-card p{
+  margin:0;
+  color:var(--muted);
+}
+.simple-card time{
+  display:inline-flex;
+  margin-bottom:12px;
+  color:#ffe1a2;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.simple-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+.simple-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:12px 16px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  font-weight:800;
+}
+.simple-button.primary{
+  border-color:rgba(255,122,24,.45);
+  background:linear-gradient(180deg, rgba(255,122,24,.3), rgba(255,122,24,.14));
+}
+.simple-list{
+  margin:0;
+  padding-left:20px;
+  color:var(--muted);
+}
+.simple-list li + li{
+  margin-top:8px;
+}
+.simple-note{
+  max-width:48rem;
+  color:var(--muted);
+}
+.simple-contact-row{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+}
+.simple-social-card{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:16px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:22px;
+  background:rgba(255,255,255,.055);
+  color:#fff;
+  font-weight:800;
+}
+.simple-social-card svg{
+  flex:0 0 auto;
+  width:24px;
+  height:24px;
+  fill:currentColor;
+}
+.simple-social-card span{
+  color:var(--muted);
+  font-size:13px;
+  font-weight:500;
+}
 .home-hub{
   display:grid;
   gap:22px;
@@ -1123,6 +1294,28 @@ h1{
     grid-template-columns:1fr;
     padding:22px;
     border-radius:26px;
+  }
+  .simple-page{
+    width:min(100% - 24px, 1040px);
+    padding:16px 0 32px;
+  }
+  .simple-hero{
+    grid-template-columns:1fr;
+    padding:22px;
+    border-radius:26px;
+  }
+  .simple-photo{
+    order:-1;
+    min-height:300px;
+  }
+  .simple-section{
+    padding:20px;
+    border-radius:26px;
+  }
+  .simple-grid,
+  .simple-grid.two,
+  .simple-contact-row{
+    grid-template-columns:1fr;
   }
   .minimal-portrait{
     order:-1;
