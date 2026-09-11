@@ -1,0 +1,12 @@
+.about-intro .home-intro-photo {
+  object-position: center 43%;
+}
+@media (max-width: 640px) {
+  .about-intro .home-intro-photo {
+    width: min(100%, 420px);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    object-position: center 38%;
+  }
+}
