@@ -1,46 +1,31 @@
-
-(function(){
-  const path = (location.pathname.split('/').pop() || 'index.html');
-  const articlePaths = new Set([
-    'ai-dlya-uchitelya.html',
-    'bezopasnost-dannyh-ai.html',
-    'kak-vnedryat-ai-v-shkole.html'
-  ]);
-  document.querySelectorAll('nav a[data-path]').forEach(a=>{
-    const navPath = a.getAttribute('data-path');
-    if(navPath === path || (navPath === 'articles.html' && articlePaths.has(path))) {
-      a.classList.add('active');
-    }
-  });
-  const els = Array.from(document.querySelectorAll('.reveal'));
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('in');
-        io.unobserve(entry.target);
-      }
-    });
-  }, {threshold:0.12});
-  els.forEach(el=>io.observe(el));
-
+(function () {
   const cookieKey = 'aiteacher_cookie_notice_accepted';
-  if(localStorage.getItem(cookieKey) !== 'yes') {
-    const notice = document.createElement('div');
-    notice.className = 'cookie-notice';
-    notice.setAttribute('role', 'region');
-    notice.setAttribute('aria-label', 'Уведомление о cookies');
-    notice.innerHTML = `
-      <div>
-        <strong>Cookies</strong>
-        <p>Сайт использует cookies и похожие технологии, чтобы корректно работать и понимать, какие материалы полезны посетителям.</p>
-      </div>
-      <button type="button" class="cookie-notice-btn">Понятно</button>
-    `;
-    document.body.appendChild(notice);
-    notice.querySelector('button').addEventListener('click', () => {
-      localStorage.setItem(cookieKey, 'yes');
-      notice.classList.add('cookie-notice-hidden');
-      setTimeout(() => notice.remove(), 220);
-    });
+  let accepted = false;
+  try {
+    accepted = localStorage.getItem(cookieKey) === 'yes';
+  } catch (_) {
+    // Storage can be unavailable in private browsing or local previews.
   }
+  if (accepted) return;
+
+  const notice = document.createElement('div');
+  notice.className = 'cookie-notice';
+  notice.setAttribute('role', 'region');
+  notice.setAttribute('aria-label', 'Данные в браузере');
+  notice.innerHTML = `
+    <div>
+      <strong>Данные в браузере</strong>
+      <p>Сохраним ваш выбор в этом браузере, чтобы больше не показывать уведомление.</p>
+    </div>
+    <button type="button" class="cookie-notice-btn">Понятно</button>
+  `;
+  document.body.appendChild(notice);
+  notice.querySelector('button').addEventListener('click', () => {
+    try {
+      localStorage.setItem(cookieKey, 'yes');
+    } catch (_) {
+      // The notice can still be dismissed for the current page.
+    }
+    notice.remove();
+  });
 })();
