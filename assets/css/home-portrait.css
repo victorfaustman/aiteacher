@@ -8,7 +8,7 @@
   overflow: hidden;
   border-radius: 16px;
   background: #050707;
-  color: #faf9f5;
+  color: #fcf8f4;
 }
 .home-intro-photo {
   position: absolute;
@@ -30,11 +30,11 @@
   font-size: clamp(34px, 4.3vw, 46px);
   line-height: 1.15;
 }
-.home-intro .lead { color: #f0f1eb; }
-.home-intro .hero-eyebrow { color: #b8cdc4; }
-.home-intro .simple-button:not(.primary) { color: #f0f1eb; border-color: #798781; }
-.home-intro .simple-button:not(.primary):hover { background: #24312c; border-color: #b8cdc4; }
-.home-intro .intro-description { color: #c1cac6; margin-top: 14px; }
+.home-intro .lead { color: #f8eeea; }
+.home-intro .hero-eyebrow { color: #eac3cd; }
+.home-intro .simple-button:not(.primary) { color: #f8eeea; border-color: #a88990; }
+.home-intro .simple-button:not(.primary):hover { background: #33272b; border-color: #eac3cd; }
+.home-intro .intro-description { color: #d4c1be; margin-top: 14px; }
 @media (min-width: 641px) and (max-width: 800px) {
   .home-intro { min-height: 330px; }
   .home-intro-copy { width: 58%; padding: 28px; }
