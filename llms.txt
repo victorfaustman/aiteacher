@@ -13,12 +13,6 @@
 - Статьи: https://aiteacher.by/articles.html
 - Контакты: https://aiteacher.by/contacts.html
 
-## Ключевые материалы
-
-- AI для учителя: https://aiteacher.by/ai-dlya-uchitelya.html
-- Безопасность, этика и работа с данными: https://aiteacher.by/bezopasnost-dannyh-ai.html
-- Как внедрять AI в школе: https://aiteacher.by/kak-vnedryat-ai-v-shkole.html
-
 ## Связанные площадки
 
 - Telegram: https://t.me/gpt_for_teacher
